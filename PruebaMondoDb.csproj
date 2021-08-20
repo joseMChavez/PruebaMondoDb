@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="diagnostic.data\**" />
+    <Compile Remove="journal\**" />
+    <Content Remove="diagnostic.data\**" />
+    <Content Remove="journal\**" />
+    <EmbeddedResource Remove="diagnostic.data\**" />
+    <EmbeddedResource Remove="journal\**" />
+    <None Remove="diagnostic.data\**" />
+    <None Remove="journal\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="collection-0-5026824931317630052.wt" />
+    <None Remove="collection-2-5026824931317630052.wt" />
+    <None Remove="collection-4-5026824931317630052.wt" />
+    <None Remove="index-1-5026824931317630052.wt" />
+    <None Remove="index-3-5026824931317630052.wt" />
+    <None Remove="index-5-5026824931317630052.wt" />
+    <None Remove="index-6-5026824931317630052.wt" />
+    <None Remove="mongod.lock" />
+    <None Remove="sizeStorer.wt" />
+    <None Remove="storage.bson" />
+    <None Remove="WiredTiger" />
+    <None Remove="WiredTiger.lock" />
+    <None Remove="WiredTiger.turtle" />
+    <None Remove="WiredTiger.wt" />
+    <None Remove="WiredTigerHS.wt" />
+    <None Remove="_mdb_catalog.wt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="4.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.9" />
+    <PackageReference Include="MongoDB.Driver" Version="2.13.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
